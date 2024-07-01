@@ -1,7 +1,10 @@
+import Profile from "../components/Pfofile/Profile";
+
+
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <Profile/>
     </div>
   )
 }
