@@ -1,11 +1,23 @@
 .card {
   display: flex;
-  width: 600px;
+  max-width: 300px;
   flex-direction: column;
   border: 2px solid black;
   border-radius: 5px;
   margin: 20px auto;
   overflow: hidden;
+
+  @media screen and (min-width: 375px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 600px;
+  }
 }
 
 .info {
@@ -15,13 +27,21 @@
   gap: 20px;
   padding: 15px;
   background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+  }
 }
 
 .avatar {
-  width: 250px;
+  max-width: 150px;
   background-color: #2a2a2a;
   border-radius: 50%;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    max-width: 250px;
+  }
 }
 
 .photo {

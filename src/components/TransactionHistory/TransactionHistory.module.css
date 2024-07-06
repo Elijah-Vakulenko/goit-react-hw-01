@@ -1,8 +1,16 @@
 .table {
   margin: 0 auto;
-  width: 600px;
+  width: 310px;
   border-collapse: collapse;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 375px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
 }
 
 .table th,
