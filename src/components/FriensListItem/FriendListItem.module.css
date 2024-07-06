@@ -1,9 +1,9 @@
-.friend-card {
+.card {
   display: flex;
   flex-direction: column;
 }
 
-.friend-name {
+.name {
 }
 
 .online {

@@ -1,4 +1,4 @@
-.profile-card {
+.card {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.profile-info {
+.info {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -14,15 +14,15 @@
   background-color: #fafafa;
 }
 
-.profile-photo {
+.photo {
 }
 
-.profile-name {
+.name {
   color: black;
 }
 
-.profile-tag,
-.profile-location {
+.tag,
+.location {
   color: #808080;
 }
 
@@ -32,8 +32,8 @@
   background-color: #d3d3d3;
 }
 
-.stats-title {
+.title {
 }
 
-.stats-value {
+.value {
 }

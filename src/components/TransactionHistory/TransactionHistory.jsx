@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TransactionHistory = () => {
+const TransactionHistory = (transactions) => {
   return (
       <div>
           <table>

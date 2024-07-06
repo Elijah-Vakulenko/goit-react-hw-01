@@ -1,11 +1,13 @@
 import React from 'react'
 
+import s from './FriendListItem.module.css'
+
 const FriendListItem = (friends) => {
   return (
-      <div className='friend-card'>
+      <div className={s.card}>
           <img src={friends.avatar} alt="Avatar" width="48" />
-          <p className='friend-name'>{friends.name}</p>
-          {friends.isOnline ? <p className='online'>Online</p> : <p className='offline'>Offline</p>}
+          <p className={s.name}>{friends.name}</p>
+          {friends.isOnline ? <p className={s.online}>Online</p> : <p className={s.offline}>Offline</p>}
       </div>
   )
 }
