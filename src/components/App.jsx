@@ -1,8 +1,12 @@
-import Profile from "../components/Pfofile/Profile";
+import Profile from "./Profile/Profile";
+import FriendList from "../components/FriendList/FriendList";
+import TransactionHistory from "../components/TransactionHistory/TransactionHistory";
+
 import userData from "../userData.json";
 import friends from "../friends.json";
 import transactions from "../transactions.json";
-import '../index.css';
+
+console.log(userData);
 
 const App = () => {
   return (
@@ -11,7 +15,7 @@ const App = () => {
         name={userData.username}
         tag={userData.tag}
         location={userData.location}
-        image={userData.avatar}
+        avatar={userData.avatar}
         stats={userData.stats}
       />
       <FriendList friends={friends} />
