@@ -1,0 +1,39 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+  background-color: #fafafa;
+}
+
+.profile-photo {
+}
+
+.profile-name {
+  color: black;
+}
+
+.profile-tag,
+.profile-location {
+  color: #808080;
+}
+
+.stats {
+  display: flex;
+  border-top: 1px solid #808080;
+  background-color: #d3d3d3;
+}
+
+.stats-title {
+}
+
+.stats-value {
+}

@@ -2,6 +2,7 @@ import Profile from "../components/Pfofile/Profile";
 import userData from "../userData.json";
 import friends from "../friends.json";
 import transactions from "../transactions.json";
+import '../index.css';
 
 const App = () => {
   return (

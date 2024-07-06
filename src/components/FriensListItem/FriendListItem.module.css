@@ -1,0 +1,15 @@
+.friend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-name {
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}

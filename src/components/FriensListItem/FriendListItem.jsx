@@ -1,11 +1,11 @@
 import React from 'react'
 
-const FriendListItem = () => {
+const FriendListItem = (friends) => {
   return (
-      <div>
-          <img src="" alt="Avatar" width="48" />
-          <p>Friend name</p>
-          <p>Friend status</p>
+      <div className='friend-card'>
+          <img src={friends.avatar} alt="Avatar" width="48" />
+          <p className='friend-name'>{friends.name}</p>
+          {friends.isOnline ? <p className='online'>Online</p> : <p className='offline'>Offline</p>}
       </div>
   )
 }

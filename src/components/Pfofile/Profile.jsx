@@ -1,33 +1,33 @@
 import React from 'react'
 
-const Profile = () => {
+const Profile = userData => {
   return (
-      <div>
-  <div>
-    <img
-      src={userData.avatar}
-      alt="User avatar"
-    />
-    <p>{userData.username}</p>
-        <p>{userData.tag}</p>
-    <p>{userData.location}</p>
-  </div>
+  <div className='profile-card'>
+    <div className='profile-info'>
+      <img className='profile-photo'
+        src={userData.avatar}
+        alt="User avatar"
+      />
+      <p className='profile-name'>{userData.username}</p>
+      <p className='profile-tag'>{userData.tag}</p>
+      <p className='profile-location'>{userData.location}</p>
+    </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>1000</span>
-    </li>
-    <li>
-      <span>Views</span>
-      <span>2000</span>
-    </li>
-    <li>
-      <span>Likes</span>
-      <span>3000</span>
-    </li>
-  </ul>
-</div>
+    <ul className='stats'>
+      <li>
+        <span className='stats-title'>Followers</span>
+        <span className='stats-value'>{userData.stats.followers}</span>
+      </li>
+      <li>
+        <span className='stats-title'>Views</span>
+            <span className='stats-value'>{userData.stats.views}</span>
+      </li>
+      <li>
+        <span className='stats-title'>Likes</span>
+        <span className='stats-value'>{userData.stats.likes}</span>
+      </li>
+    </ul>
+  </div>
   )
 }
 

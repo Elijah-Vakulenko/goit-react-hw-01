@@ -3,12 +3,10 @@ import React from 'react'
 const FriendList = () => {
   return (
       <div>
-          <ul>
-            <li><FriendListItem /></li>
-            <li><FriendListItem /></li>
-            <li><FriendListItem /></li>
-            <li><FriendListItem /></li>
-            <li><FriendListItem /></li>
+          <ul className='list'>
+        {friends.map(friend => (
+          <li key={friend.id}><FriendListItem /></li>
+        ))}
           </ul>
     </div>
   )
